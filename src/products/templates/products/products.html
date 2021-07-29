@@ -15,8 +15,7 @@
                 <h1 class="my-4">Store</h1>
                 <div class="list-group">
                     {% for category in categories %}
-                        <a href="{% url 'products:category' category.id %}"
-                           class="list-group-item">
+                        <a href="#" class="list-group-item">
                             {{ category.name }}
                         </a>
                     {% endfor %}
@@ -70,7 +69,9 @@
                                     <p class="card-text">{{ product.short_description }}</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <a href="{% url 'products:basket_add' product.id %}">
+                                    {#	<a href="{% url 'products:basket_add' product.id %}">	#}
+									{#	<a href="{% url 'products' %}">	#}
+									<a href="{% url 'products:index' %}">
                                         <button type="button" class="btn btn-outline-success">
                                             Отправить в корзину
                                         </button>
