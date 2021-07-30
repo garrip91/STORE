@@ -1,0 +1,44 @@
+[
+{
+    "model": "products.productcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Одежда",
+        "description": "Описание для одежды"
+    }
+},
+{
+    "model": "products.productcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Новинки",
+        "description": ""
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "Худи чёрного цвета с монограммами \"Adidas Originals\"",
+        "image": "products_images/22350203-1-black.jpg",
+        "description": "",
+        "short_description": "Мягкая ткань для свитшотов. Стиль и комфорт - это образ жизни.",
+        "price": "6090.00",
+        "quantity": 15,
+        "category": 1
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Синяя куртка \"The North Face\"",
+        "image": "products_images/2a3c36445816c1d8540c82990d26c074.jpg",
+        "description": "",
+        "short_description": "Гладкая ткань. Водонепроницаемое покрытие. Лёгкий и тёплый пухов",
+        "price": "23725.00",
+        "quantity": 7,
+        "category": 1
+    }
+}
+]

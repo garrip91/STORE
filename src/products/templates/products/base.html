@@ -8,8 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        {#	<title>{{ title|capfirst }}</title>	#}
-		<title>{% block title %}{% endblock %}</title>
+        <title>{{ title|capfirst }}</title>
         <!-- Bootstrap core CSS -->
         <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
         {% block css %} {% endblock %}
@@ -32,8 +31,7 @@
                             <li class="nav-item">
                                 {#	<a class="nav-link" href="{% url 'users:profile' %}">	#}
 								<a class="nav-link" href="#">
-								    {#	{{ user.username }}	#}
-									###ЛОГИН###
+								    {{ user.username }}
                                     <i class="fas fa-user-circle"></i>
                                 </a>
                             </li>
@@ -43,8 +41,7 @@
                             </li>
                         {% else %}
                             <li class="nav-item">
-                                {#	<a class="nav-link" href="{% url 'users:login' %}">Войти <i class="fas fa-sign-in-alt"></i></a>	#}
-								<a class="nav-link" href="#">Войти <i class="fas fa-sign-in-alt"></i></a>
+                                <a class="nav-link" href="{% url 'users:login' %}">Войти <i class="fas fa-sign-in-alt"></i></a>
                             </li>
                         {% endif %}
                     </ul>
