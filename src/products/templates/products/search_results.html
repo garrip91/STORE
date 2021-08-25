@@ -1,0 +1,49 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block css %}
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    
+	<h1>Поиск товаров</h1>	
+	{% if request.GET.q == '' %}
+	    <h2>Что мы можем показать Вам с таким: "{{ request.GET.q }}" поисковым запросом???</h2>
+	{% else %}
+        {% if object_list %}
+	        <h2>Результат Вашего поискового запроса "{{ request.GET.q }}"</h2>
+	        {% for object in object_list %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#">
+                            <img class="card-img-top" src="/media/{{ object.image }}" alt="" height="400">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">{{ object.name }}</a>
+                            </h4>
+                            <h5>{{ object.price }} руб.</h5>
+                            <p class="card-text">{{ object.short_description }}</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="{% url 'products:basket_add' object.id %}">
+                                <button type="button" class="btn btn-outline-success">
+                                    Отправить в корзину
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>            
+            {% endfor %}
+	    {% else %}
+            <p>По Вашему запросу товара(-ов) не найдено!</p>
+	    {% endif %}
+    <div class="margin-8"></div>
+	{% endif %}
+    	
+{% endblock %}
