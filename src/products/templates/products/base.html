@@ -45,6 +45,10 @@
                     </ul>
                 </div>
             </div>
+			<form class="d-flex" action="{% url 'search_results' %}" role="search" name="q" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск" name="q">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
         </nav>
         {% block content %} {% endblock %}
         {% block footer %} {% endblock %}
