@@ -1,19 +1,19 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/garrip91/todo-project">
+  <a href="https://github.com/garrip91/STORE">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Веб-проект (сервис) "Список событий" по созданию, редактированию и удалению событий/дел</h3>
+  <h3 align="center">Веб-проект (интернет-магазин)</h3>
 
   <p align="center">
-    Readme веб-проекта (сервиса) "Список событий"
+    Readme веб-проекта (интернет-магазина)
     <br/>
     <br/>
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/Garrip91/todo-project?color=dark-green) ![Issues](https://img.shields.io/github/issues/Garrip91/todo-project) 
+![Contributors](https://img.shields.io/github/contributors/Garrip91/STORE?color=dark-green) ![Issues](https://img.shields.io/github/issues/Garrip91/STORE) 
 
 ## Table Of Contents
 
@@ -32,16 +32,11 @@
 
 ![Screen Shot](images/screenshot.png)
 
-Этот проект является сервисом, на котором можно:
-
-
-* Создавать события
-* Редактировать события
-* Удалять события
+Этот проект является простейшим интернет-магазином без подключения платёжной системы
 
 ## Built With
 
-Веб-проект (сервис) создан с помощью Python, Django
+Веб-проект (интернет-магазин) создан с помощью Python, Django
 
 ## Getting Started
 
@@ -62,7 +57,7 @@ https://www.python.org/
 1. Clone the repo
 
 ```sh
-git clone https://github.com/garrip91/todo-project
+git clone https://github.com/garrip91/STORE
 ```
 
 
@@ -93,7 +88,7 @@ python manage.py runserver
 
 ## Usage
 
-Данный веб-проект (сервис) Вы можете использовать для создания, редактирования и удаления событий
+Данный веб-проект (Интернет-магазин) Вы можете просмотреть как пример
 
 ## Contributing
 
@@ -109,7 +104,7 @@ python manage.py runserver
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/todo-project/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/STORE/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
@@ -118,5 +113,5 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Garrip91/tod
 ## Acknowledgements
 
 * [Garrip91](https://github.com/garrip91)
-* [todo-project](https://github.com/garrip91/todo-project)
+* [STORE](https://github.com/garrip91/STORE)
 * [Python](https://www.python.org/)
